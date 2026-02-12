@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+              color: violet;
+              background-color: turquoise;
+              font-size: 21px;
+              font-style: italic;
+              border: 5px dashed greenyellow;
+              border-radius: 9px;
+        }
+        /* 
+        input:focus{
+            border: 3px dotted darkblue;
+            border-radius: 5px;
+            background-color: aqua;
+            color: brown;
+        } */
+
+        input[type="text"]:hover{
+
+            color: white;
+            background-color: yellow;
+            border: 5px solid orange;
+
+        }
+
+        input[type="textarea"]:hover{
+            color: aquamarine;
+            background-color: pink;
+            border: 5px dotted red;
+            border-radius: 9px;
+
+        }
+
+        input[type="password"]:hover{
+
+            color:black;
+            background-color: blue;
+            border: 5px solid red;
+            border-radius: 9px;
+        }
+        button{
+            background-color: violet;
+            color: saddlebrown;
+            border: 9px dotted gold;
+            border-radius: 9px;
+        }
+        button:hover{
+            background-color: blue;
+            color: yellowgreen;                 
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>name :</label>
+        <input type="text">
+        <br><br>
+
+        <label>Address :</label>
+        <input type="Textarea">
+        <br><br>
+
+        <label>E-amil ID: ></label>
+        <input type="text">
+        <br><br>
+
+        <label>password :</label>
+        <input type="password">
+        <br><br>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1::before{
+            counter-increment: section;
+            content:counter(section)".";
+
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h2::before{
+            counter-increment: scetion;
+            content: counter(section)"."
+            counter(subsection)"-";
+        }
+        h1{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fruits</h1>
+        <h2>Apple</h2>
+        <h2>orange</h2>
+        <h1>vegtables</h1>
+        <h2>Ladiesfinger</h2>
+        <h2>beetroot</h2>
+
+    </div>
+</body>
+</html>

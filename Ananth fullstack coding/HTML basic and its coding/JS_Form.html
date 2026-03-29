@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="my form">
+        <label>name :</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label>email :</label>
+        <input type="email" id="email" name="email"><br><br>
+        <button type="button" ondblClick="submitform()">Submit</button>
+    </form>
+    <script>
+        function submitform(){
+            let name=document.getElementById("name").value;
+            let email=document.getElementById("email").value;
+            console.log(`name : ${name}, email : ${email}`);
+            alert(`HELLO, ${name} your mail id is ${email}.`);
+            document.write("Your form is submitted successfully!.")
+        }
+
+       
+            
+        
+    </script>
+</body>
+</html>

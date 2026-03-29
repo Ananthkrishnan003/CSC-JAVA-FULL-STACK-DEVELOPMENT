@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class house{
+            constructor(color,address,name){
+                this.color=color;
+                this.location=address;
+                this.name=name;
+            }
+
+            houseColor(){
+                console.log("the color of the house is"+" "+this.color)
+                console.log("the address of the house is"+" "+this.location)
+            }
+
+            housePaint(){
+                console.log("the painting of the house is done by"+" "+this.name)
+            }
+
+        }
+        let houseOne=new house("red","madurai","xyz company")
+        console.log(houseOne.color);
+    houseOne.houseColor();
+    console.log(houseOne.name)
+     houseOne.housePaint();
+     console.log(houseOne.location)
+    </script>
+</body>
+</html>

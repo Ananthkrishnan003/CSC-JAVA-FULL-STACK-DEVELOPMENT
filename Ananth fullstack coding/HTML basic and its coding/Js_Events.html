@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+//events
+   in general events are the triggering point for any action
+// when user submits a form or opens a website  or application .HTML has events which enable javascript code to br executed.
+   
+//events 
+onload   - Browser loads a webpage 
+onclick  - click an element
+ondblclick - double click on element
+onmouseover -mouse over an element
+onmouseout - mouse away from the elementon keydown - pushing keys on keyboard
+
+
+    <body onload ="alert('page loaded')"> 
+    <h1>heading</h1>
+    <p onclick="alert('clicked')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, vero.</p>
+    <button ondblclick="DblClick()" value="">Double clicked</button><br>
+    name:<input type="text" onkeydown="keypress()">
+
+    <script>
+        function DblClick(){
+            document.write("hello java");
+        }
+
+        // setTimeout (keypress,5000)
+        function keypress(){
+            alert("user entering the details");
+        }
+    </script>
+</body>
+</html>
+
+
+</body>
+</html>
